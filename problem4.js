@@ -10,7 +10,7 @@ function calculateFinalScore(input) {
     }
     let finalScore = input.testScore + input.schoolGrade;
 
-    if(input.isFFamily) {
+    if(input.isFFamily === true) {
         finalScore += 20;
     }
 
@@ -25,7 +25,7 @@ let result = calculateFinalScore ({
     name : "Lima",
     testScore : 45,
     schoolGrade : 25,
-    isFFamily: false,
+    isFFamily: true,
 });
 console.log(result);
 
